@@ -185,7 +185,7 @@ body{
 
 /* background */
 .background{
-    height: 800vh;
+    height:auto;
     width:100%;
     background: var(--lavender);
     border-radius:10px 10px 0px 0px;
@@ -608,3 +608,169 @@ body{
     position: relative;
 }
 
+.connect-text{
+    position:absolute;
+    top: 50px;
+    left: 55px;
+}
+
+.connect-text h1{
+    font-size: 45px;
+    color: whitesmoke;
+    margin-bottom: 15px;
+    font-weight: lighter;
+    
+}
+
+.connect-text p{
+    font-size: 16px;
+    color: whitesmoke;
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+
+.connect-input{
+    height: 43px;
+    width: 350px;
+    background-color: transparent;
+    display:flex;
+    align-items: center;
+    position: relative;
+    gap: 5px;
+}
+
+.connect-text .connect-input input{
+    flex: 1;
+    width:350px;
+    height:43px;
+    border-radius:20px;
+    border: 1px solid rgb(28, 131, 248);;
+    padding:10px 20px;
+    font-size: 15px;
+    color: white;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+.connect-text .connect-input input::placeholder{
+    color: white;
+}
+
+.connect-text .connect-input input:focus{
+    border: 1px solid rgb(28, 131, 248);
+    outline: none;
+}
+
+.connect-text .connect-input button{
+    position: absolute;
+    right:0;
+    height: 43px;
+    border-radius: 20px;
+    padding: 0px 25px;
+    color: whitesmoke;
+    background-color: var(--blue);
+    border: none;
+    font-size: 17px;
+}
+
+.connect-text .connect-input button:hover{
+    background-color:rgb(42, 129, 250);
+    box-shadow: 1px 1px 10px rgb(48, 135, 255);
+    backdrop-filter: blur(2px);
+}
+
+/* footer-section */
+.footer{
+    margin-top: 50px;
+    width: 90%;
+    height:350px;
+    padding:10px;
+    background-color: rgba(154, 185, 252, 0.12);
+    border-radius: 20px;
+}
+
+.footer-section{
+    width: 100%;
+    height: 90%;
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    padding: 20px 30px 0 30px;
+    gap: 30px;
+}
+
+.footer-section .footer-text h1 span{
+    font-size:34px;
+    font-weight: bold;
+    color: var(--blue);
+}
+
+.footer-section .footer-text h1{
+    font-size: 31px;
+    color: var(--black);
+    margin-bottom: 20px;
+}
+
+.footer-text{
+    width: 300px;
+}
+.footer-text #p-icons{
+    font-size: 17px;
+    color: gray;
+    margin-bottom: 25px;
+}
+
+.footer-icons a{
+    list-style: none;
+    padding: 9px 11px;
+    border-radius: 6px;
+    font-size: 20px;
+    background-color: #f4f2ff;
+    border: 1px solid rgba(75, 45, 245,0.3);
+    transition:all 0.2s ease-in-out;
+}
+
+.footer-section div>ul,
+.footer-section div ul li > a{
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+.footer-section div ul li > a:hover{
+    color:rgb(2, 96, 237);
+    text-decoration: underline;
+}
+
+.footer-section div > p{
+    font-size: 17px;
+    margin-bottom: 5px;
+    color: rgb(82, 82, 82);
+}
+
+.footer-section ul li a i{
+    color: rgb(2, 96, 237);
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.footer-icons a:hover{
+    background-color: #8f8f8f;
+}
+
+.footer hr{
+    background-color:rgb(154, 154, 154);
+    height: 1px;
+    border: none;
+    border-radius:3px;
+    width: 100%;
+}
+
+.footer > p{
+    color: rgb(90, 89, 89);
+    margin-top: 8px;
+    text-align: center;
+}
