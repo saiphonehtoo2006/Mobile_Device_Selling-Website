@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Poppins';
-    src: url('../fonts/Poppins-Regular.ttf' ) format('truetype')
+    src: url('./fonts/Poppins-Regular.ttf' ) format('truetype')
 }
 
 html{
@@ -185,7 +185,7 @@ body{
 
 /* background */
 .background{
-    min-height: 800vh;
+    height: auto;
     width:100%;
     background: var(--lavender);
     border-radius:10px 10px 0px 0px;
